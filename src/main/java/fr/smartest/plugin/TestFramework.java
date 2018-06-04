@@ -8,6 +8,6 @@ import java.util.Set;
 public interface TestFramework extends Plugin {
 
     void setUp(List<Module> modules);
-    List<TestReport> Run(Set<Test> tests) throws TestFrameworkException;
+    Set<TestReport> run(Set<Test> tests) throws TestFrameworkException;
 
 }
