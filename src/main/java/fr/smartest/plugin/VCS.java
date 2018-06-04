@@ -10,7 +10,7 @@ public interface VCS extends Plugin {
 
     void setUp(String VCSpath);
     void commit(String message) throws VCSException;
-    Set<String> diff() throws VCSException;
+    Set<Diff> diff() throws VCSException;
     void checkout(String version);
     void update();
 
