@@ -6,7 +6,7 @@ import java.util.Set;
 public interface Language extends Plugin {
 
     void setUp(List<Module> modules);
-    Set<Test> getTestsRelatedToChanges();
+    Set<Test> getTestsRelatedToChanges(String scope);
     void update(List<String> diff);
     void save();
 

@@ -1,13 +1,16 @@
 package fr.smartest.plugin;
 
 import fr.smartest.exceptions.CommitFailureException;
+import fr.smartest.exceptions.VCSException;
 
 import java.util.List;
+import java.util.Set;
 
 public interface VCS extends Plugin {
 
-    void commit(String message) throws CommitFailureException;
-    List<String> diff() throws CommitFailureException;
+    void setUp(String VCSpath);
+    void commit(String message) throws VCSException;
+    Set<String> diff() throws VCSException;
     void checkout(String version);
     void update();
 
