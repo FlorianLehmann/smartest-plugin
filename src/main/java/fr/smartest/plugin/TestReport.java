@@ -10,7 +10,8 @@ public interface TestReport {
         ABORTED
     }
 
+    Test getTest();
     Status getResult();
-    Optional<Exception> getException();
+    Optional<Throwable> getCause();
 
 }
