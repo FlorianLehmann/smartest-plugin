@@ -1,7 +1,5 @@
 package fr.smartest.plugin;
 
-import java.util.Comparator;
-
 public interface Test {
 
     enum Priority implements Comparable<Priority> {
@@ -21,5 +19,6 @@ public interface Test {
     }
 
     Priority getPriority();
+
     String getIdentifier();
 }
