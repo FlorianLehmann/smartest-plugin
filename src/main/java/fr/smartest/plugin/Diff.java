@@ -1,5 +1,7 @@
 package fr.smartest.plugin;
 
+import java.nio.file.Path;
+
 public interface Diff {
 
      enum Status{
@@ -9,5 +11,5 @@ public interface Diff {
      }
 
      Status getStatus();
-     String getPath();
+     Path getPath();
 }

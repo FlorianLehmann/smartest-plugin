@@ -1,10 +1,12 @@
 package fr.smartest.plugin;
 
+import java.nio.file.Path;
+
 public interface Module {
 
-    String getSrcPath();
-    String getTestPath();
-    String getCompiledSrcPath();
-    String getCompiledTestPath();
+    Path getSrcPath();
+    Path getTestPath();
+    Path getCompiledSrcPath();
+    Path getCompiledTestPath();
 
 }
