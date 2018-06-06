@@ -10,6 +10,15 @@ public interface Diff {
         MODIFIED;
      }
 
+    /**
+     * return the Status of the change (i.e Added, removed or modified)
+     * @return Status
+     */
      Status getStatus();
-     Path getPath();
+
+    /**
+     *
+     * @return a Path of the file change
+     */
+    Path getPath();
 }
