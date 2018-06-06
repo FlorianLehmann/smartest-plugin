@@ -11,7 +11,7 @@ public interface TestReport {
      * Enum representing the status of the associated test
      */
     enum Status {
-        SUCESSFUL,
+        SUCCESSFUL,
         FAILURE,
         ABORTED
     }
