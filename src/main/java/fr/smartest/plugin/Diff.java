@@ -21,4 +21,16 @@ public interface Diff {
      * @return a Path of the file change
      */
     Path getPath();
+
+    /**
+     *
+     * @return the content of the file before the current state
+     */
+    String getOldContent();
+
+    /**
+     *
+     * @return the content of the file now
+     */
+    String getNewContent();
 }
